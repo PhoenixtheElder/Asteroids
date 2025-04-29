@@ -52,7 +52,7 @@ def main():
             for rock in asteroids:
                 if rock.collision(bullet) == True:
                     if rock.alive() and bullet.alive():
-                        rock.kill()
+                        rock.split()
                         bullet.kill()
                         break
 
